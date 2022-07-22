@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@600&family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;200;300;500;600&family=Quicksand:wght@600&display=swap');
+*{margin:0;
+padding: 0;}
+
+.container{
+    padding:6vh 15vw;
+    min-height:100vh;
+}
+section{
+    min-height: 100vh;
+    
+}
+.fr {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card{
+   border-radius: 2%;
+   
+    /* background-color: #2C68DB; */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+        /* Safari */
+        position: sticky;
+        top: 6vh;
+}
+.card ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.card ul li div{
+padding-left: 20px;
+width: 20rem;
+
+}
+.card ul li div p{
+    font-size: 1.23rem;
+    line-height: 3.2rem;
+    opacity: 0.55;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.1rem;}
+#poster{
+margin:auto;
+margin-top:30px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+width:69vw;
+height:36vh;
+border-radius: 4%;
+display: flex;
+align-items: center;
+background-color: #FAFAFA;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+#poster .img{width: 36vmin;
+    height: 36vmin;
+    background: url("https://www.cashify.in/static/svgs/static-pages-banner.svg") no-repeat right center;
+    background-size: 36vmin 36vmin;
+    margin-right: 7vw;
+}
+.head{
+    color:#42c8b7;
+    font-size:54px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-left: 3vw;
+}
+#maincontent{
+width: 48vw;
+font-family: 'Montserrat', sans-serif;
+padding-left: 30px;
+}
+hr{ background-color: rgba(0, 0, 0, 0.1);
+    margin:0 10px;
+   opacity:0.1;
+    height: 0.01px;
+}
+.p2{ margin:12px 0;
+font-size: 17px;
+text-align: justify;
+letter-spacing: .75px;
+line-height: 26px;
+}
+.listin{
+    list-style-position: inside
+}
+
+@media only screen and (max-width: 1685px) {
+    #maincontent{
+        padding-top: 10vh;
+        }
+                #banner{
+                    width:100%;
+                }
+                .container{
+                    padding:5vmin;
+                }
+
+                #poster{width:100%;
+
+                }
+                #maincontent{width:100%}
+    }
+
+        @media only screen and (max-width: 800px) {
+           .head{ font-size: 40px;}
+            #poster {
+                height: calc(200px + 40vmin);
+                flex-direction: column-reverse !important;
+                justify-content: space-evenly;
+                }
+    
+            }
+        }
